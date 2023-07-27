@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* utility classes */
+.container {
+  /* container will stay in the middle no matter what */
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+.text-primary {
+  color: #fffe33;
+}
+.bg-light{
+    background: #f4f4f4;
+    color: #333;
+}
+.bg-dark{
+background: #141466;
+color: #fff;
+}
+.bg-primary{
+background: #fffe33;
+color: #141466;
+}
+
+.l-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.8rem;
+}
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.py-1 { padding: 1.5rem 0;}
+.py-2 { padding: 2rem 0;}
+.py-3 {padding: 3rem 0;}
+
+.py-1 { padding: 1.5rem ;}
+.py-2 { padding: 2rem ;}
+.py-3 {padding: 3rem ;}
+
+
+.btn {
+  display: inline-block;
+  color: #ffffff;
+  background: #141466;
+  padding: 0.5rem 2rem;
+  border: none;
+  border: radius 5px;
+  margin-bottom: 0.5rem;
+}
+.btn:hover {
+  background: #fffe33;
+}
+
+.btn-dark {
+  background: #141466;
+  color: #ffffff;
+}
+
+.list{
+margin: 0.5rem 0;
+}
+
+.list li{
+    padding: 0.5rem 1.5rem;
+    border-bottom: #444 dotted 1px ;
+    list-style: none;
+}
+
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #141466;
+  color: #ffffff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+#navbar ul li a {
+  color: #ffffff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  color: #ffffff;
+  background: #fffe33;
+  border-radius: 5px;
+}
+
+/* showcase */
+#showcase {
+  background: #333 url(../images/white\ female.jpg) no-repeat center
+    center/cover;
+  height: 100vh;
+  color: #141466;
+}
+.showcase-content p {
+  color: #000;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* overlay */
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+}
+
+/* section what we do */
+.items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background: #fffe33;
+  padding: 1rem;
+  border-radius: 50%;
+}
+/* who section */
+#who{
+    display: flex;
+    text-align: center;
+}
+
+#who div{
+    flex: 1;
+}
+
+#who .who-img{
+    background: url(/images/3\ corporate.jpg) no-repeat center center/cover;
+}
+
+/* clients */
+#clients .items{
+    display: flex;
+}
+#clients .items img{
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+/* section contact */
+#contact{
+    display: flex;
+}
+
+#contact .map, #contact .contact-form {
+    flex: 1;
+}
+
+#contact .contact-form .form-group{
+margin: 0.75rem;
+}
+
+#contact .contact-form label{
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea{
+    width: 100%;
+    padding: 0.5rem ;
+}
